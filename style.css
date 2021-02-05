@@ -1,0 +1,101 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  z-index: -1;
+  /* The image used */
+  background-image: url("https://cdn.glitch.com/12f276bc-1ab3-4496-bc55-5d13e6289a50%2F1.png?v=1612290854642");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: change;
+   animation-duration: 2s;
+  animation-delay: 0.9s;
+  animation-fill-mode:forwards;
+  animation-timing-function: linear;
+  
+}
+.window {
+  z-index: 1;
+  position: absolute;
+  right: 23%;
+  top: 22.5%;
+  width: 525px;
+  height: 280px;
+  animation-name: pop;
+  animation-duration: 0.6s;
+
+  animation-timing-function: ease-in-out;
+}
+@keyframes pop {
+  0% {
+    width: 50px;
+    height: 20px;
+    right: 28%;
+    top: 24%;
+    opacity: 0.5;
+  }
+  12.5% {
+    width: 75px;
+    height: 32.5px;
+    right: 27%;
+    top: 24%;
+    opacity: 0.5;
+  }
+  25% {
+    width: 100px;
+    height: 40px;
+    right: 26%;
+    top: 24%;
+    opacity: 0.5;
+  }
+  37.5% {
+    width: 150px;
+    height: 60px;
+    right: 25%;
+    top: 24%;
+    opacity: 0.6;
+  }
+  50% {
+    width: 200px;
+    height: 80px;
+    opacity: 0.6;
+  }
+  62.5% {
+    width: 300px;
+    height: 120px;
+    opacity: 0.6;
+  }
+  75% {
+    width: 400px;
+    height: 160px;
+    opacity: 0.8;
+  }
+  87.5% {
+    width: 475px;
+    height: 240px;
+    opacity: 0.95;
+  }
+  100% {
+    width: 525px;
+    height: 280px;
+    opacity: 1;
+  }
+}
+@keyframes change {
+  from {
+    background-image: url("https://cdn.glitch.com/12f276bc-1ab3-4496-bc55-5d13e6289a50%2F1.png?v=1612290854642");
+  }
+
+  to {
+    background-image: url("https://cdn.glitch.com/12f276bc-1ab3-4496-bc55-5d13e6289a50%2F2-2.png?v=1612290853627");
+  }
+}
